@@ -33,14 +33,18 @@ div img {
   max-width: 100%;
 }
 
-
 header {
   text-align: center;
   height:50vh;
   background: #B8ECD7;
+  background-position: center center;
   display:flex;
   align-items:center;
   justify-content: center;
+}
+header img {
+  max-width: 90%;
+  max-height: 98%;
 }
 
 h1 {
