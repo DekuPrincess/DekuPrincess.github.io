@@ -59,14 +59,20 @@ h1.show {
   display:none;
 }
 
-
+div .site-wrap {
+  position: absolute;
+}
 nav {
-  background: #193441;
-  top:0;
-  width: 100%; 
-  transition:all 0.5s;
-  position: relative;
-  z-index: 1;
+ 
+    height: 100%;
+    width: 200px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #111;
+    overflow-x: hidden;
+    padding-top: 20px;
 
 }
 
@@ -184,6 +190,14 @@ body.fixed-nav nav {
   h1 {
     font-size: 250%;
   }
+  nav {
+  background: #193441;
+  top:0;
+  width: 100%; 
+  transition:all 0.5s;
+  position: relative;
+  z-index: 1;
+}
 }
 @media only screen and (max-width: 650px){
   h1.show {
