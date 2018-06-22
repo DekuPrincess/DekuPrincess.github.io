@@ -35,16 +35,11 @@ div img {
 
 header {
   text-align: center;
-  height:50vh;
+  height: 50vh;
   background: #B8ECD7;
-  background-position: center center;
   display:flex;
   align-items:center;
   justify-content: center;
-}
-header img {
-  max-width: 90%;
-  max-height: 98%;
 }
 
 h1 {
@@ -68,10 +63,11 @@ h1.show {
 nav {
   background: #193441;
   top:0;
-  width: 100%;
+  width: 100%; 
   transition:all 0.5s;
   position: relative;
   z-index: 1;
+
 }
 
 body.fixed-nav nav {
@@ -85,7 +81,9 @@ nav ul {
   padding:0;
   list-style: none;
   display:flex;
+  flex-direction: column;
 }
+
 
 nav li {
   flex:1;
@@ -97,6 +95,7 @@ nav li {
 }
 
 li.logo {
+  display:none;
   max-width:0;
   overflow: hidden;
   background: white;
@@ -110,7 +109,8 @@ li.logo a {
 }
 
 .fixed-nav li.logo {
-  max-width:500px;
+  max-width: 100%;
+  display: flex;
 }
 a {
   text-decoration: none;
@@ -168,19 +168,17 @@ nav a {
 }
 
 @media only screen and (max-width: 960px) {
+
 .fixed-nav li.logo {
   max-width: 100%;
   } 
-  nav ul {
-  flex-direction: column;
-}
+  
 body.fixed-nav nav {
   position: relative;
   
 }
-li.logo {
-  display: none;
-}
+
+
 }
 @media only screen and (max-width: 1060px){
   h1 {
@@ -194,5 +192,6 @@ li.logo {
   header h1 {
     display: none;
   }
+
 }
 
