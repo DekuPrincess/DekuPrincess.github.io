@@ -1,81 +1,487 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>Welcome!</title>
-  <link rel="stylesheet" href="styles.css">
-</head>
-<body><a id="top"></a> <!-- for home button link -->
 
-<!-- Header Section -->
-  
-<!-- Nav Section -->
-  
-  <nav id="main">
-    <ul>
-      <li class="logo"><a href="#top">Home</a></li>
-      <li class="hvr-fade"><a href="#about">About</a></li>
-      <li class="hvr-fade"><a href="#work">Work Samples</a></li>
-      <li class="hvr-fade"><a href="#contact">Contact</a></li>
-    </ul>
-  </nav>
-<div class="site-wrap">
-<img src="webLogo.png">
-</div>
-<!-- Main Content -->
-  <div class="site-wrap">
-    <p>Welcome to my portfolio! All of my samples have links so you can see the code. Enjoy!</p>
-  </div>
-  
-  <div class="textContainer" id="about"><h1>About</h1></div>
-<!-- About Section -->
-  <div class="site-wrap">
-    <p>I have worked in web development and content management for about 2 years. I took a break from this to explore other avenues upon graduating from university, but am now ready to jump back into web development/design. Have a look around my portfolio! </p>
-</div>
+  <head>
 
-<div class="textContainer" id="work"><h1>Work Samples</h1></div>
-<!-- Work Samples Section -->   
-<div class="site-wrap">
-<!-- JS City/State Project -->
-<h2>Javascript City/State Search</h2>
-<p>This application lets you search for a US city or state and returns the results with population counts for each area. The word that is typed in is also highlighted in the list.</p>
-<div>
-  <img src="img/JSProject.png">
-</div>
-<p>Check out the code: <a href="https://github.com/DekuPrincess/CityStateSearch"  target="_blank">Github</a></p>
-  <p>See a live demo: <a href="CitySearchDemo.html">Demo</a></p>
-<!-- Coffee Shop Layout -->
-<h2>Coffee Shop Web Layout</h2>
-<p>This template features a clean, uncluttered layout with button and image hover effects. The simple UI makes it easy for customers to navigate, while large images draw their attention. </p>
-<div>
-  <img src="img/CoffeeShop.png">
-</div>
-<p>Check out the code: <a href="https://github.com/DekuPrincess/CoffeeShop"  target="_blank">Github</a></p>
-<!-- Transparent Navigation Layout -->
-<h2>Transparent Navigation</h2>
-<p>This template has a transparent nav, centered logo and a beautiful large image background.</p>
-<div>
-  <img src="img/TransparentHeader.png">
-</div>
-<p>Check out the code: <a href="https://codepen.io/dekuprincess/pen/mKmzLJ"  target="_blank">Codepen</a></p>
-<!-- Video Landing Page -->
-  <h2>Landing Page with Video Background</h2>
-  <p>This landing page features an auto-play video background and is replaced with a static image at smaller sizes to accomodate mobile.</p>
-  <p>Custom buttons feature a hover effect with a color background that slides in.</p>
-<div>
-    <img src="img/landing02.png" >
-</div>
-    <p>Check out the code at: <a href="https://github.com/DekuPrincess/FullscreenVideoLandingPage"  target="_blank">Github</a></p>
-  <p>Live Demo: <a href="landingDemo/index.html">Demo</a></p>
-</div>
-<!-- Contact Section -->
-<div class="textContainer" id="contact"><h1>Contact</h1></div>
-<div class="site-wrap">
-<p>You may contact me for my resume or to work on your project at mware0225@gmail.com</p>
-</div>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="My Dev Portfolio">
+    <meta name="author" content="Michelle Ware">
 
-<!-- Include my JS -->
-<script type="text/javascript" src="script.js"></script>
+    <title>Welcome!</title>
 
-</body>
+    <!-- Bootstrap core CSS -->
+    <link href="vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Custom fonts  -->
+    <link href="vendor/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Kaushan+Script' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Droid+Serif:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Roboto+Slab:400,100,300,700' rel='stylesheet' type='text/css'>
+
+    <!-- Custom styles  -->
+    <link href="css/agency.css" rel="stylesheet"> <!-- change back to min once finished -->
+
+  </head>
+
+  <body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar navbar-expand-lg navbar-dark fixed-top" id="mainNav">
+      <div class="container">
+        <a class="navbar-brand js-scroll-trigger" href="#page-top">Michelle Ware</a>
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+          Menu
+          <i class="fa fa-bars"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarResponsive">
+          <ul class="navbar-nav text-uppercase ml-auto">
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#services">Services</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#portfolio">Portfolio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link js-scroll-trigger" href="#contact">Contact</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Header -->
+    <header class="masthead">
+      <div class="container">
+        <div class="intro-text">
+          <div class="intro-lead-in">Web Developer/Designer</div>
+          <div class="intro-heading text-uppercase">Learn what I can do for you</div>
+          <a class="btn btn-primary btn-xl text-uppercase js-scroll-trigger" href="#services">Tell Me More</a>
+        </div>
+      </div>
+    </header>
+
+    <!-- Services -->
+    <section id="services">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Services</h2>
+            <h3 class="section-subheading text-muted">What I offer.</h3>
+          </div>
+        </div>
+        <div class="row text-center">
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-bar-chart fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">SEO</h4>
+            <p class="text-muted">Keyword research + optimization, Adwords, Facebook Ads, content marketing, and more.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Responsive Development</h4>
+            <p class="text-muted">Website and web components with user experience in mind that look great on devices of any size.</p>
+          </div>
+          <div class="col-md-4">
+            <span class="fa-stack fa-4x">
+              <i class="fa fa-circle fa-stack-2x text-primary"></i>
+              <i class="fa fa-paint-brush fa-stack-1x fa-inverse"></i>
+            </span>
+            <h4 class="service-heading">Design</h4>
+            <p class="text-muted">Wireframes, logos, and promotional materials all made for your vision.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="bg-light" id="portfolio">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Portfolio</h2>
+            <h3 class="section-subheading text-muted">Samples & Code. Click for more info.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal1">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/CoffeeShop-thumb.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Coffee Shop</h4>
+              <p class="text-muted">Site Mockup + Code</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal2">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/JSProject-thumb.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Javascript Demo</h4>
+              <p class="text-muted">Auto-complete text</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal3">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/TransparentHeader-thumb.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Transparent Navigation</h4>
+              <p class="text-muted">Design, Logo + Code</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal4">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/landing-thumb.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Landing Page</h4>
+              <p class="text-muted">Full Screen Video Background</p>
+            </div>
+          </div>
+          <div class="col-md-4 col-sm-6 portfolio-item">
+            <a class="portfolio-link" data-toggle="modal" href="#portfolioModal5">
+              <div class="portfolio-hover">
+                <div class="portfolio-hover-content">
+                  <i class="fa fa-plus fa-3x"></i>
+                </div>
+              </div>
+              <img class="img-fluid" src="img/portfolio/WEBLOGO-thumb.png" alt="">
+            </a>
+            <div class="portfolio-caption">
+              <h4>Graphic</h4>
+              <p class="text-muted">Logo Design</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">About</h2>
+            <h3 class="section-subheading text-muted">All about me.</h3>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <ul class="timeline">
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/1.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2013-2017</h4>
+                    <h4 class="subheading">Learning the craft</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">I went to university for Business while pursuing Computer Science courses as my electives. This led me to working exclusively in web related work throughout college.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/2.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2017</h4>
+                    <h4 class="subheading">Professional Experience</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Without a portfolio, I worked in IT. I didn't enjoy it, and instead of wasting time getting certifications I didn't want I pursued other opportunities. (Traveled and had stints in real estate and translation work.) </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div class="timeline-image">
+                  <img class="rounded-circle img-fluid" src="img/about/3.jpg" alt="">
+                </div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h4>2018</h4>
+                    <h4 class="subheading">Open minded freelancer</h4>
+                  </div>
+                  <div class="timeline-body">
+                    <p class="text-muted">Getting into my groove. Love providing web solutions to clients, in a way that is understandable for modern business owners. Always upgrading and learning new skills.</p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div class="timeline-image">
+                  <h4>Be Part
+                    <br>Of My
+                    <br>Story!</h4>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+
+   
+    
+
+    <!-- Contact -->
+    <section id="contact">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <h2 class="section-heading text-uppercase">Contact Me</h2>
+            <h3 class="section-subheading text-muted">Email the address below at your earliest convenience.</h3>
+          </div>
+        </div>
+        <div class="col-lg-12 text-center">
+                  <p class="mailme">mware0225@gmail.com</p>
+                </div>
+              </div>
+            </section>
+
+    <!-- Footer -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-md-4">
+            <span class="copyright">Copyright &copy; Michelle Ware 2018</span>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline social-buttons">
+              <li class="list-inline-item">
+                <a href="https://github.com/DekuPrincess?tab=repositories" target="_blank">
+                  <i class="fa fa-github"></i>
+                </a>
+              </li>
+              <li class="list-inline-item">
+                <a href="https://www.linkedin.com/in/michelle-ware-83390682/" target="_blank">
+                  <i class="fa fa-linkedin"></i>
+                </a>
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-4">
+            <ul class="list-inline quicklinks">
+              <li class="list-inline-item">
+                <a href="#">Back to top</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Portfolio Modals -->
+
+    <!-- Modal 1 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details -->
+                  <h2 class="text-uppercase">Coffee Shop</h2>
+                  <p class="item-intro text-muted">One page design for restaurants & coffee shops.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/coffeeShop-full.png" alt="">
+                  <p>This template features a clean, uncluttered layout with button and image hover effects. The simple UI makes it easy for customers to navigate, while large images draw their attention.</p>
+                  <ul class="list-inline">
+                    <li>Check out the Code: <a href="https://github.com/DekuPrincess/CoffeeShop" target="_blank">Github</a></li> 
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 2 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Javascript City/State Search</h2>
+                  <p class="item-intro text-muted">Pulls data from another github repo to search.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/JSProject-full.png" alt="">
+                  <p>This application lets you search for a US city or state and returns the results with population counts for each area. The word that is typed in is also highlighted in the list.</p>
+                  <ul class="list-inline">
+                    <li>Check out the Code: <a href="https://github.com/DekuPrincess/CityStateSearch" target="_blank">Github</a></li>
+                    <li>Play with the demo: <a href="CitySearchDemo.html" target="_blank">Demo</a></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 3 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Transparent Navigation</h2>
+                  <p class="item-intro text-muted">Custom Nav featuring full screen image background.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/TransparentHeader-full.png" alt="">
+                  <p>Like the title says! Paragraphs feature slightly transparent background boxes in this slick design.</p>
+                  <ul class="list-inline">
+                    <li>Check out the code + demo: <a href="https://codepen.io/dekuprincess/pen/mKmzLJ" target="_blank">Codepen</a></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 4 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Landing Page</h2>
+                  <p class="item-intro text-muted">Feautures full screen video background.</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/landing-full.png" alt="">
+                  <p>Features an auto-play video background and is replaced with a static image at smaller sizes to accomodate mobile. Custom buttons feature a hover effect with a color background that slides in.</p>
+                  <ul class="list-inline">
+                    <li>Check out the code: <a href="https://github.com/DekuPrincess/FullscreenVideoLandingPage" target="_blank">Github</a></li>
+                    <li>Play with the demo: <a href="landingDemo/index.html" target="_blank">Demo</a></li>
+                  </ul>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal 5 -->
+    <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" role="dialog" aria-hidden="true">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="close-modal" data-dismiss="modal">
+            <div class="lr">
+              <div class="rl"></div>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-8 mx-auto">
+                <div class="modal-body">
+                  <!-- Project Details Go Here -->
+                  <h2 class="text-uppercase">Graphic Sample</h2>
+                  <p class="item-intro text-muted">Logos, infographics, icons, and more</p>
+                  <img class="img-fluid d-block mx-auto" src="img/portfolio/WEBLOGO-full.png" alt="">
+                  <p>I typically don't do graphic work (professionally), but I can. I use Adobe Photoshop, Illustrator, and Lightroom. 
+                  I also edit video footage for promotional materials using Premiere Pro. (Color grading, basic edits, transitions, etc.)
+                  </p>
+                  <button class="btn btn-primary" data-dismiss="modal" type="button">
+                    <i class="fa fa-times"></i>
+                    Close Project</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="vendor/jquery/jquery.min.js"></script>
+    <script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
+
+    <!-- Contact form JavaScript -->
+    <script src="js/jqBootstrapValidation.js"></script>
+    <script src="js/contact_me.js"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="js/agency.min.js"></script>
+
+  </body>
+
 </html>
