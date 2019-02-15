@@ -75,7 +75,7 @@ section h3.section-subheading {
   padding: 10px;
   border-radius: 10px;
 }
-.contactText a {
+#contactMailText {
   color: white;
 }
 @media (min-width: 768px) {
