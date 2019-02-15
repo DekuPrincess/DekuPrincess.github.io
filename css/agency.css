@@ -53,7 +53,7 @@ section h3.section-subheading {
   font-family: 'Droid Serif', 'Helvetica Neue', Helvetica, Arial, sans-serif;
 }
 .aboutIcon {
-  width: 100%;
+  max-width: 100%;
   padding: 1rem;
 
  -webkit-filter: grayscale(100%);
